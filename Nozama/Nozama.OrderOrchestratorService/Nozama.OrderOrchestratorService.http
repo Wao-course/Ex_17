@@ -1,0 +1,6 @@
+@Nozama.OrderOrchestratorService_HostAddress = http://localhost:5181
+
+GET {{Nozama.OrderOrchestratorService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

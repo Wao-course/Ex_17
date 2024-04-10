@@ -8,12 +8,18 @@ Today we will work on a updated version of Nozama - which can be found on the sa
     * If you can't get the Compose file to work - start the services manually  (through VS) and attach them to the same database - should require less resources.
 
 The main tasks today is to setup a SAGA, which takes an order via the `OrderService`, then handle payment through the `PaymentSevice`, and if that succeeds updates the `InventoryService`. 
+>Running the project is done imply by building the project and running the docker-compose file.
 
 The three Services should have endpoints for the basic functionality. You are welcome to add endpoints as needed.
 
 All of these steps can go wrong for varius reasons. 
 
 * Which style of SAGA do you want to implement and why - discuss with your group?
+    >orchestrating the SAGA pattern would be suitable for handling the complex workflow of the services in Nozama. With an orchestrated approach, you can centralize control over the workflow, simplifying coordination and ensuring that each step of the process is executed in the correct sequence. This can help manage the complexity effectively and ensure the reliability and consistency of the overall system.
+
+
+
+
 
 * Implement this either via a Coreographed or Orchestrated SAGAs with all the services - you can choose whichever language and/or tools you need to make this implementation.
     * Make sure you account for all expected business failues.
